@@ -14,10 +14,23 @@ int ft_check(int i, char *str)
     return (0);
 }
 
+int ft_is_in(char c, char *str)
+{
+    int i;
+
+    i = 0;
+    while(str[i])
+    {
+        if (c == str[i])
+            return(1);
+        i++;
+    }
+    return (0);
+}
+
 void ft_inter(char *s1, char *s2)
 {
     int i;
-    int j;
 
     i = 0;
     while(s1[i])
